@@ -1,0 +1,65 @@
+/* =========================
+    Universal
+========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* test */
+header {
+    background-color: red;
+}
+
+img {
+    height: 20%;
+    width: 20%;
+}
+
+/* =========================
+    Navigation
+========================== */
+
+/* =========================
+    Slideshow
+========================== */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* =========================
+    Media Queries
+========================== */
+
+

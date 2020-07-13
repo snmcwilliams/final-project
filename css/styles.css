@@ -1,5 +1,5 @@
 /* =========================
-    Universal
+    Global
 ========================== */
 
 * {
@@ -13,12 +13,12 @@ body {
 }
 
 /* =========================
-    Navigation
+    Header
 ========================== */
 
-/* =========================
-    Slideshow
-========================== */
+/* Navigation */
+
+/* Slideshow */
 
 .slideshow-container {
   max-width: 1000px;
@@ -54,7 +54,7 @@ body {
 }
 
 /* =========================
-    Body
+    Gallery
 ========================== */
 
 .gallery {
@@ -64,11 +64,33 @@ body {
     justify-content: space-around;
 }
 
+.gallery li:nth-child(2n) {
+    background-color: lightskyblue;
+}
+
 img {
     width: 250px;
     height: 100%;
     margin: 20px 20px;
     flex: 1 auto;
+}
+
+.mannie {
+    border: 4px solid red;
+}
+
+.reggie {
+    border: 4px ridge green;
+}
+
+/* =========================
+    Text Styles
+========================== */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* =========================

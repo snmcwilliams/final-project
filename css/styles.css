@@ -62,12 +62,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-}
-
-.pic {
-    order: 4;
-    flex: 0 auto;
 }
 
 img {
@@ -77,9 +71,80 @@ img {
     flex: 1 auto;
 }
 
-
 /* =========================
     Media Queries
 ========================== */
 
+@media only screen and (min-width: 480px) {
 
+    nav a {
+      float: left;
+      width: 30%;
+      margin: 0 0 0 5%;
+      padding: 25px 1%;
+      margin-bottom: 0;
+    }
+  
+    nav li:first-child a {
+      margin-left: 0;
+    }
+  
+    nav li:last-child a {
+      margin-right: 0;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px),
+         only screen and (min-width: 700px) and (orientation: landscape) {
+  
+    .title {
+      float: left;
+      font-size: 1.4em;
+    }
+  
+    nav {
+      float: right;
+      width: 60%;
+    }
+  
+    nav a {
+      padding: 15px 1%;
+    }
+   
+  }
+  
+  @media only screen and (min-width: 1140px) {
+  
+    .wrapper {
+      width: 1026px;
+      margin: 0 auto;
+    }
+  
+    .title {
+      font-size: 2em;
+    }
+  
+    nav a {
+      padding: 25px 1%;
+    }
+    
+  }
+    
+  /*************************
+  Clearfix
+  *************************/
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .clearfix {
+    *zoom: 1;
+  }  

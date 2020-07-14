@@ -10,15 +10,13 @@ body {
     min-height: 100vh;
     width: auto;
     margin: 0;
+    background: linear-gradient(firebrick, transparent 90%),
+                linear-gradient(0deg, lightgrey, transparent);
 }
 
 /* =========================
     Header
 ========================== */
-
-/* Navigation */
-
-/* Slideshow */
 
 .slideshow-container {
   max-width: 1000px;

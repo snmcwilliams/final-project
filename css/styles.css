@@ -7,9 +7,11 @@
 }
 
 body {
-    min-height: 100vh;
-    width: auto;
     margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: cursives;
+    width: auto;
     background: linear-gradient(firebrick, transparent 90%),
                 linear-gradient(0deg, lightgrey, transparent);
 }
@@ -62,8 +64,12 @@ body {
     justify-content: space-around;
 }
 
+.pic:nth-child(2n+1) {
+    border: 8px solid lightslategray;
+}
+
 .gallery li:nth-child(2n) {
-    background-color: lightskyblue;
+    background-color: lightslategrey;
 }
 
 img {
@@ -73,13 +79,17 @@ img {
     flex: 1 auto;
 }
 
-.mannie {
+/* .mannie {
     border: 4px solid red;
-}
+} */
 
-.reggie {
-    border: 4px ridge green;
-}
+/* .reggie {
+    border: 8px outset green;
+} */
+
+/* .rue {
+    border: 8px outset hotpink;
+} */
 
 /* =========================
     Text Styles

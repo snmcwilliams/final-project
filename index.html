@@ -6,7 +6,6 @@
     <title>Mannie Dog Blog</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
   <div>
@@ -14,7 +13,7 @@
     <header class="wrapper clearfix">
       <h1 class="title">Mannie.</h1>
       <p>Barks and Tailwags.</p>
-      <!-- Slideshow container -->
+      <!-- slideshow container -->
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="img/slide1.jpg">
@@ -29,12 +28,12 @@
       <br>
     </header>
     
-    <!-- picture gallery -->
+    <!-- gallery container -->
     <div class="gallery-container">
       <ul class="gallery">
         <li>
           <figure>
-            <img class="pic" src="img/img1.jpg" alt="">
+            <img id="myImg1" class="pic" src="img/img1.jpg" alt="hairstyle" style="width: 100%; max-width: 300px">
           </figure>
         </li>
         <li>
@@ -138,6 +137,25 @@
           </figure>
         </li>
       </ul>
+    </div>
+
+    <!-- gallery modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Text -->
+      <div id="caption">
+        <p>
+          Sometimes, it’s better to leave hair styling to the professionals.<br>
+          As a circus dog, it is imperative to have the trendiest hair styles.<br>
+          This one is called “Mad scientist went for a swim.”          
+        </p>
+      </div>
     </div>
 
     <div class="footer-container">

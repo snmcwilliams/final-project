@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div>
 
-    <header class="wrapper clearfix">
+  <header class="main-header">
+    <div class="wrapper clearfix">
       <h1 class="title">Mannie.</h1>
       <p>Barks and Tailwags.</p>
-      <!-- slideshow container -->
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="img/slide1.jpg">
+      <!-- Carousel -->
+      <div class="carousel-container">
+        <div class="myCarousel fade">
+          <img class= "carousel-pic" src="img/slide1.jpg">
         </div>
-        <div class="mySlides fade">
-          <img src="img/slide2.jpg">
+        <div class="myCarousel fade">
+          <img class= "carousel-pic" src="img/slide2.jpg">
         </div>
-        <div class="mySlides fade">
-          <img src="img/slide3.jpg">
+        <div class="myCarousel fade">
+          <img class= "carousel-pic" src="img/slide3.jpg">
         </div>
       </div>
       <br>
-    </header>
+    </div>
+  </header>
     
-    <!-- gallery container -->
+    <!-- Gallery -->
     <div class="gallery-container">
       <ul class="gallery">
         <li>
@@ -139,14 +140,13 @@
       </ul>
     </div>
 
-    <!-- gallery modal -->
+    <!-- Gallery Modal -->
     <div id="myModal" class="modal">
 
-      <!-- close button -->
       <span class="close">&times;</span>
 
-      <!-- content -->
       <img class="modal-content" id="img01">
+
       <div id="caption">
         <p>
           Sometimes, it’s better to leave hair styling to the professionals.<br>
@@ -154,16 +154,15 @@
           This one is called “Mad scientist went for a swim.”          
         </p>
       </div>
+      
     </div>
 
-    <div class="footer-container">
-      <footer class="wrapper">
-        <span>Copyright 2020</span>
+      <footer class="main-footer">
+        <span>&copy; 2020, Mannie</span>
       </footer>
-    </div>
+
 
     <script src="js/script.js"></script>
 
-  </div>
 </body>
 </html>

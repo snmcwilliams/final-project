@@ -1,18 +1,18 @@
-// Slideshow
+// Carousel
 
-var slideIndex = 0;
-showSlides();
+var carouselIndex = 0;
+showCarousel();
 
-function showSlides() {
+function showCarousel() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  var carousel = document.getElementsByClassName("myCarousel");
+  for (i = 0; i < carousel.length; i++) {
+    carousel[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 9000); // Change image every 9 seconds
+  carouselIndex++;
+  if (carouselIndex > carousel.length) {carouselIndex = 1}
+  carousel[carouselIndex-1].style.display = "block";
+  setTimeout(showCarousel, 5000); // Change image every 5 seconds
 }
 
 // Modal
@@ -29,7 +29,7 @@ img.onclick = function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+// Click on <span> (x) to close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }

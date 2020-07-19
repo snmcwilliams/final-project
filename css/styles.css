@@ -20,19 +20,34 @@ body {
     Header
 ========================== */
 
-.slideshow-container {
+.main-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background: linear-gradient(lightslategray, transparent 90%);
+}
+
+.carousel-pic {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.carousel-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+.myCarousel {
   display: none;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -72,7 +87,7 @@ body {
     background-color: lightslategrey;
 }
 
-img {
+.pic {
     width: 250px;
     height: 100%;
     margin: 20px 20px;
@@ -177,25 +192,7 @@ ul {
     Media Queries
 ========================== */
 
-@media only screen and (min-width: 480px) {
-
-    nav a {
-      float: left;
-      width: 30%;
-      margin: 0 0 0 5%;
-      padding: 25px 1%;
-      margin-bottom: 0;
-    }
-  
-    nav li:first-child a {
-      margin-left: 0;
-    }
-  
-    nav li:last-child a {
-      margin-right: 0;
-    }
-  
-  }
+@media only screen and (min-width: 480px) {}
   
   @media only screen and (min-width: 768px),
          only screen and (min-width: 700px) and (orientation: landscape) {
@@ -203,17 +200,7 @@ ul {
     .title {
       float: left;
       font-size: 1.4em;
-    }
-  
-    nav {
-      float: right;
-      width: 60%;
-    }
-  
-    nav a {
-      padding: 15px 1%;
-    }
-   
+    }   
   }
   
   @media only screen and (min-width: 1140px) {
@@ -225,12 +212,7 @@ ul {
   
     .title {
       font-size: 2em;
-    }
-  
-    nav a {
-      padding: 25px 1%;
-    }
-    
+    }    
   }
     
   /*************************

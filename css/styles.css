@@ -12,8 +12,6 @@ body {
     text-align: center;
     font-family: cursives;
     width: auto;
-    background: linear-gradient(firebrick, transparent 90%),
-                linear-gradient(0deg, lightgrey, transparent);
 }
 
 /* =========================
@@ -21,13 +19,21 @@ body {
 ========================== */
 
 .main-header {
+  background: linear-gradient(lightslategray, transparent 90%),
+              linear-gradient(0deg, lightgrey, transparent);
+  border: 9px double white;
+}
+
+.wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  flex-flow: row nowrap;
   justify-content: center;
-  align-items: baseline;
-  background: linear-gradient(lightslategray, transparent 90%);
+  align-items: center;
+}
+
+.title {
+  color: white;
 }
 
 .carousel-pic {
@@ -71,6 +77,11 @@ body {
 /* =========================
     Gallery
 ========================== */
+
+.gallery-container {
+  background: linear-gradient(firebrick, transparent 90%),
+  linear-gradient(0deg, lightgrey, transparent);
+}
 
 .gallery {
     display: flex;
@@ -192,13 +203,12 @@ ul {
     Media Queries
 ========================== */
 
-@media only screen and (min-width: 480px) {}
+/* @media only screen and (min-width: 480px) {} */
   
-  @media only screen and (min-width: 768px),
-         only screen and (min-width: 700px) and (orientation: landscape) {
+  @media only screen and (min-width: 768px) {
   
     .title {
-      float: left;
+      float: center;
       font-size: 1.4em;
     }   
   }

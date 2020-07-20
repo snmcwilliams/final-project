@@ -21,7 +21,7 @@ body {
 .main-header {
   background: linear-gradient(lightslategray, transparent 90%),
               linear-gradient(0deg, lightgrey, transparent);
-  border: 9px double white;
+  border: 9px double lightgrey;
 }
 
 .wrapper {
@@ -42,7 +42,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 9px double white;
 }
 
 .carousel-container {

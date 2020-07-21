@@ -18,9 +18,10 @@ function showCarousel() {
 // Modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal
+// Get the image
 var img = document.getElementById("myImg1");
 var modalImg = document.getElementById("img01");
+// Attach click to image
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;

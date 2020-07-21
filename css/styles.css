@@ -137,8 +137,8 @@ body {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 480px;
+  width: 100%;
+  max-width: 250px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

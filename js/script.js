@@ -17,14 +17,17 @@ function showCarousel() {
 
 // Modal
 var modal = document.getElementById("myModal");
-
+var modalCaption = document.getElementById("caption")
 // Get the image
-var img = document.getElementById("myImg1");
+var galleryImages = document.querySelectorAll(".gallery > li > figure");
 var modalImg = document.getElementById("img01");
-// Attach click to image
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
+
+for (let i=0; i<galleryImages.length; i++) {
+    galleryImages[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.firstElementChild.src;
+      modalCaption.innerHTML=this.lastElementChild.innerHTML;
+    }
 }
 
 // Get the <span> element that closes the modal

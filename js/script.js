@@ -22,7 +22,7 @@ var modalCaption = document.getElementById("caption")
 var galleryImages = document.querySelectorAll(".gallery > li > figure");
 var modalImg = document.getElementById("img01");
 
-for (let i=0; i<galleryImages.length; i++) {
+for (let i = 0; i < galleryImages.length; i++) {
     galleryImages[i].onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.firstElementChild.src;

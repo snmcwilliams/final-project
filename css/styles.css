@@ -182,13 +182,6 @@ body {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 480px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 /* =========================
     Text Styles
 ========================== */
@@ -203,7 +196,20 @@ ul {
     Media Queries
 ========================== */
 
-/* @media only screen and (min-width: 480px) {} */
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 480px){
+  .modal-content {
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
   
   @media only screen and (min-width: 768px) {
   

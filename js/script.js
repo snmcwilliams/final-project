@@ -18,17 +18,18 @@ function showCarousel() {
 // Modal
 var modal = document.getElementById("myModal");
 
-var modalCaption = document.getElementById("caption"); // Gets modal caption
+// var modalCaption = document.getElementById("caption");
+var modalCaption = document.getElementsByClassName(".modal-body");
 
-var galleryImages = document.querySelectorAll(".gallery > li > figure"); // Gets all figures elements
-var modalImg = document.getElementById("img01"); // Gets modal img
+var galleryImages = document.querySelectorAll(".modal-button"); // selects all images with class modal-button
+// var modalImg = document.getElementById("img01");
 
 for (let i = 0; i < galleryImages.length; i++) {
     galleryImages[i].onclick = function(){
       modal.style.display = "block";
-      modalImg.src = this.firstElementChild.src;
-      // modalCaption.innerHTML=this.lastElementChild.innerHTML;
-      modalCaption.innerHTML=this.modal-body;
+      // modalImg.src = this.firstElementChild.src;
+      // modalCaption.innerHTML = this.lastElementChild.innerHTML;
+      modalCaption.innerHTML = this.lastElementChild.innerHTML;
     }
 }
 

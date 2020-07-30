@@ -7,6 +7,6 @@ Feature Requirements:
 * Media queries
 * ":nth child" to style series of elements
 * Image carousel with 3 images
-* Javascript - _The modal is a work in progress. It does work properly, as it is, however I would like for the content to only be visible in the modal and not on the page._
+* Javascript - _The modal is a work in progress as each image on the page should have its own unique content._
 
 There are no special instructions.

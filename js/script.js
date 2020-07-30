@@ -1,5 +1,4 @@
 // Carousel
-
 var carouselIndex = 0;
 showCarousel();
 
@@ -15,25 +14,26 @@ function showCarousel() {
   setTimeout(showCarousel, 5000); // Change image every 5 seconds
 }
 
+
 // Modal
 var modal = document.getElementById("myModal");
-var modalCaption = document.getElementById("caption")
-// Get the image
-var galleryImages = document.querySelectorAll(".gallery > li > figure");
-var modalImg = document.getElementById("img01");
+
+var modalCaption = document.getElementById("caption"); // Gets modal caption
+
+var galleryImages = document.querySelectorAll(".gallery > li > figure"); // Gets all figures elements
+var modalImg = document.getElementById("img01"); // Gets modal img
 
 for (let i = 0; i < galleryImages.length; i++) {
     galleryImages[i].onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.firstElementChild.src;
-      modalCaption.innerHTML=this.lastElementChild.innerHTML;
+      // modalCaption.innerHTML=this.lastElementChild.innerHTML;
+      modalCaption.innerHTML=this.modal-body;
     }
 }
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// Click on <span> (x) to close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }

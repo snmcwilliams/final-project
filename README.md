@@ -7,6 +7,6 @@ Feature Requirements:
 * Media queries
 * ":nth child" to style series of elements
 * Image carousel with 3 images
-* Javascript - _The modal is a work in progress as each image on the page should have its own unique content._
+* Javascript
 
 There are no special instructions.

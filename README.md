@@ -1,12 +1,21 @@
 # Mannie
 ## Barks and Tailwags
-Mannie, Barks and Tailwags, is a dog blog. Each image opens a modal of which will include the selected image and some content. The content will consist of poems, brief stories, snippets of wisdom or opinion, friend shares, etc.
+
+Mannie, Barks and Tailwags, is a dog blog. Each image opens a modal which will include the selected image and a blog entry. The blog entry will consist of poems, brief stories, snippets of wisdom or opinion, friend shares, etc.
 
 Feature Requirements:
 * Flexbox to rearrange 2 content areas
-* Media queries
+* Media queries to switch from mobile to destop layout
 * ":nth child" to style series of elements
 * Image carousel with 3 images
-* Javascript
+* Image modal with text
+
+Requirements:
+* Responsive to different devices
+* 3 custom-written CSS elements
+* JS file
+* code comments
+* 5+ commits
+* Readme
 
 There are no special instructions.

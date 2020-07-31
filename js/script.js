@@ -19,7 +19,6 @@ function showCarousel() {
 var modal = document.getElementById("myModal");
 
 var modalCaption = document.getElementById("caption");
-
 var galleryImages = document.querySelectorAll(".gallery > li > figure");
 var modalImg = document.getElementById("img01");
 

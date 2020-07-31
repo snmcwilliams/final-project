@@ -79,6 +79,10 @@ body {
     Gallery
 ========================== */
 
+figcaption {
+  display: none;
+}
+
 .gallery-container {
   background: linear-gradient(firebrick, transparent 90%),
   linear-gradient(0deg, lightgrey, transparent);
